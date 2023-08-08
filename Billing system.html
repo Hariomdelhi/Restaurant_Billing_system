@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Billing System</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Restaurant Billing System</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>Burger</td>
+            <td>₹60.00</td>
+            <td><input type="number" id="burger-quantity" value="0"></td>
+            <td id="burger-total">₹0.00</td>
+        </tr>
+
+        <tr>
+            <td>Pizza</td>
+            <td>₹100.00</td>
+            <td><input type="number" id="pizza-quantity" value="0"></td>
+            <td id="pizza-total">₹0.00</td>
+        </tr>
+
+        <tr>
+            <td>Salad</td>
+            <td>₹30.00</td>
+            <td><input type="number" id="salad-quantity" value="0"></td>
+            <td id="salad-total">₹0.00</td>
+        </tr>
+
+        <tr>
+            <td>Chole bhature</td>
+            <td>₹50.00</td>
+            <td><input type="number" id="chole-quantity" value="0"></td>
+            <td id="chole-total">₹0.00</td>
+        </tr>
+
+    </table>
+
+    <p class="total">Total : ₹0.00</p>
+
+    <button type="button" onclick="calculateTotal()">Calculate Total</button>
+</div>
+<script src="jsfile.js"></script>
+</body>
+</html>
